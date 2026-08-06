@@ -169,6 +169,14 @@
 
   <section id="advisors" style="max-width:1160px;margin:0 auto;padding:64px 32px 0">
     <div style="border-top:2px solid var(--color-divider);padding-top:28px">
+      <div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:20px;width:100%;padding:0 0 30px">
+        <img src="images/mit.png" alt="Massachusetts Institute of Technology" style="height:76px;width:auto;object-fit:contain">
+        <img src="images/harvard.png" alt="Harvard University" style="height:72px;width:auto;object-fit:contain">
+        <img src="images/princeton.png" alt="Princeton University" style="height:60px;width:auto;object-fit:contain">
+        <img src="images/upenn.png" alt="University of Pennsylvania" style="height:72px;width:auto;object-fit:contain">
+        <img src="images/brown.png" alt="Brown University" style="height:72px;width:auto;object-fit:contain">
+        <img src="images/nyu.png?v=3" alt="New York University" style="height:80px;width:auto;object-fit:contain">
+      </div>
       <h2 style="font-size:28px;margin:0 0 24px;letter-spacing:-0.02em">Advisory Committee</h2>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:0 40px">
         <sc-for list="{{ advisors }}" as="p" hint-placeholder-count="8">
@@ -260,8 +268,8 @@ class Component extends DCLogic {
     });
 
     return {
-      submissionUrl: this.props.submissionUrl ?? "#",
-      cfpUrl: this.props.cfpUrl ?? "#",
+      submissionUrl: this.props.submissionUrl ?? "https://openreview.net/group?id=robot-learning.org/CoRL/2026/Workshop/UncertainWM",
+      cfpUrl: this.props.cfpUrl ?? "#call",
       topics,
       dates: [
         { label: "Submission", value: "September 23, 2026 — 23:59 AoE" },
