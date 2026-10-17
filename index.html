@@ -157,7 +157,7 @@
         <p class="text-muted" style="font-size:13.5px;margin-top:10px">Room and location: TBD. All times local to Austin (CST).</p>
       </div>
       <div>
-        <sc-for list="{{ schedule }}" as="s" hint-placeholder-count="8">
+        <sc-for list="{{ schedule }}" as="s" hint-placeholder-count="7">
           <div style="display:grid;grid-template-columns:minmax(120px,160px) 1fr;gap:24px;padding:14px 0;border-bottom:1px solid var(--color-neutral-300)">
             <div style="font-family:var(--font-heading);font-weight:800;font-size:14px;color:var(--color-neutral-700)">{{ s.time }}</div>
             <div style="font-family:var(--font-heading);font-weight:800;font-size:16px;letter-spacing:-0.01em">{{ s.event }}</div>
@@ -214,12 +214,170 @@
     </div>
   </section>
 
-  <section style="margin-top:80px;background:var(--color-accent);color:#fff">
-    <div style="max-width:1160px;margin:0 auto;padding:72px 32px">
-      <div style="font-family:var(--font-heading);font-weight:800;font-size:12px;letter-spacing:0.14em;text-transform:uppercase;opacity:0.8">Call for Reviewers</div>
-      <h2 style="font-size:clamp(32px,4.6vw,58px);line-height:1.05;letter-spacing:-0.03em;margin:18px 0 0;max-width:20ch;color:#fff">Help us review. Send your CV.</h2>
-      <p style="font-size:17px;max-width:60ch;margin:22px 0 28px;color:#fff">If you would like to serve as a reviewer, email us and include your CV. We appreciate your support.</p>
-      <a href="mailto:uncertainty-world-model-corl2026@googlegroups.com" style="display:inline-block;background:#fff;color:var(--color-accent-700);text-decoration:none;font-family:var(--font-heading);font-weight:800;font-size:15px;padding:16px 24px" style-hover="background:var(--color-accent-100)">uncertainty-world-model-corl2026@googlegroups.com</a>
+  <section id="accepted-papers" style="max-width:1160px;margin:0 auto;padding:64px 32px 0">
+    <div style="display:grid;grid-template-columns:minmax(180px,240px) 1fr;gap:40px;border-top:2px solid var(--color-divider);padding-top:28px">
+      <div>
+        <h2 style="font-size:28px;margin:0;letter-spacing:-0.02em">Accepted Papers</h2>
+        <p class="text-muted" style="font-size:13.5px;margin-top:10px">39 accepted papers.</p>
+      </div>
+      <div>
+        <article style="padding:20px 0;border-bottom:1px solid var(--color-neutral-300)">
+          <h3 style="font-family:var(--font-heading);font-weight:800;font-size:18px;line-height:1.4;letter-spacing:-0.01em;margin:0 0 8px">Detecting Silent Action-Interface Mismatch with Calibrated Relational World Models</h3>
+          <p style="font-size:14px;line-height:1.6;color:var(--color-neutral-700);margin:0">Rui Zhu, xurui li, Haixu Tang</p>
+        </article>
+        <article style="padding:20px 0;border-bottom:1px solid var(--color-neutral-300)">
+          <h3 style="font-family:var(--font-heading);font-weight:800;font-size:18px;line-height:1.4;letter-spacing:-0.01em;margin:0 0 8px">CalIm: Learning a Calibrated Uncertainty Expectation for World-Model Imagination</h3>
+          <p style="font-size:14px;line-height:1.6;color:var(--color-neutral-700);margin:0">Zhejia Wen, Meixia Lin, Kangjie Zhou, Pengying Wu, Chunxuan Jiao, Chang Liu, Lige Liu</p>
+        </article>
+        <article style="padding:20px 0;border-bottom:1px solid var(--color-neutral-300)">
+          <h3 style="font-family:var(--font-heading);font-weight:800;font-size:18px;line-height:1.4;letter-spacing:-0.01em;margin:0 0 8px">Beyond Ensemble Disagreement: Predictive STL Monitoring of RL Locomotion under Distribution Shift</h3>
+          <p style="font-size:14px;line-height:1.6;color:var(--color-neutral-700);margin:0">Qurban Ali, Badaruddin Chachar, Maqsood Ali Solangi</p>
+        </article>
+        <article style="padding:20px 0;border-bottom:1px solid var(--color-neutral-300)">
+          <h3 style="font-family:var(--font-heading);font-weight:800;font-size:18px;line-height:1.4;letter-spacing:-0.01em;margin:0 0 8px">Relational Invariance under Predictive Disagreement in World Models</h3>
+          <p style="font-size:14px;line-height:1.6;color:var(--color-neutral-700);margin:0">Weichun Tai, Yih Ping Luh</p>
+        </article>
+        <article style="padding:20px 0;border-bottom:1px solid var(--color-neutral-300)">
+          <h3 style="font-family:var(--font-heading);font-weight:800;font-size:18px;line-height:1.4;letter-spacing:-0.01em;margin:0 0 8px">Adaptive Rollout Truncation Based on Epistemic Uncertainty for Efficient Offline World Model Training</h3>
+          <p style="font-size:14px;line-height:1.6;color:var(--color-neutral-700);margin:0">Nikodem Sebastian Zymla, Laurin Thiele, Johannes Pitz</p>
+        </article>
+        <article style="padding:20px 0;border-bottom:1px solid var(--color-neutral-300)">
+          <h3 style="font-family:var(--font-heading);font-weight:800;font-size:18px;line-height:1.4;letter-spacing:-0.01em;margin:0 0 8px">Latent Projection for Latent Planning</h3>
+          <p style="font-size:14px;line-height:1.6;color:var(--color-neutral-700);margin:0">Yoo Sung Jang, Michael S Ryoo</p>
+        </article>
+        <article style="padding:20px 0;border-bottom:1px solid var(--color-neutral-300)">
+          <h3 style="font-family:var(--font-heading);font-weight:800;font-size:18px;line-height:1.4;letter-spacing:-0.01em;margin:0 0 8px">Decision-Level Auditing of Latent Robot World Models</h3>
+          <p style="font-size:14px;line-height:1.6;color:var(--color-neutral-700);margin:0">Anikait Rana, Siddhant Rana, Aditya Rao Udupi</p>
+        </article>
+        <article style="padding:20px 0;border-bottom:1px solid var(--color-neutral-300)">
+          <h3 style="font-family:var(--font-heading);font-weight:800;font-size:18px;line-height:1.4;letter-spacing:-0.01em;margin:0 0 8px">ManiDreams: An Open-Source Library for Robust Object Manipulation via Uncertainty-aware Task-specific Intuitive Physics</h3>
+          <p style="font-size:14px;line-height:1.6;color:var(--color-neutral-700);margin:0">Gaotian Wang, Kaiyu Hang, Kejia Ren, Andrew Morgan</p>
+        </article>
+        <article style="padding:20px 0;border-bottom:1px solid var(--color-neutral-300)">
+          <h3 style="font-family:var(--font-heading);font-weight:800;font-size:18px;line-height:1.4;letter-spacing:-0.01em;margin:0 0 8px">Most of a World Model&#x27;s Epistemic Uncertainty Is Not Worth Resolving</h3>
+          <p style="font-size:14px;line-height:1.6;color:var(--color-neutral-700);margin:0">Varun Puttagunta</p>
+        </article>
+        <article style="padding:20px 0;border-bottom:1px solid var(--color-neutral-300)">
+          <h3 style="font-family:var(--font-heading);font-weight:800;font-size:18px;line-height:1.4;letter-spacing:-0.01em;margin:0 0 8px">When Can Learned Uncertainty Be Trusted? An Audit of Distributional Reinforcement Learning</h3>
+          <p style="font-size:14px;line-height:1.6;color:var(--color-neutral-700);margin:0">Hari Prasad</p>
+        </article>
+        <article style="padding:20px 0;border-bottom:1px solid var(--color-neutral-300)">
+          <h3 style="font-family:var(--font-heading);font-weight:800;font-size:18px;line-height:1.4;letter-spacing:-0.01em;margin:0 0 8px">MS-MEM: Multi-Skill Manipulation-Enhanced Mapping via Uncertainty-Aware Belief-Space World Models</h3>
+          <p style="font-size:14px;line-height:1.6;color:var(--color-neutral-700);margin:0">Nils Dengler, Yitian Shi, Jesper Mücke, Sicong Pan, Rania Rayyes, Maren Bennewitz</p>
+        </article>
+        <article style="padding:20px 0;border-bottom:1px solid var(--color-neutral-300)">
+          <h3 style="font-family:var(--font-heading);font-weight:800;font-size:18px;line-height:1.4;letter-spacing:-0.01em;margin:0 0 8px">Closure Atlas: Effective Closure and Its Failure Boundaries in World Models</h3>
+          <p style="font-size:14px;line-height:1.6;color:var(--color-neutral-700);margin:0">Xingrui Gu, Chuyi Jiang, Hanxue Gu, Felix Juefei-Xu, Mengyue Yang</p>
+        </article>
+        <article style="padding:20px 0;border-bottom:1px solid var(--color-neutral-300)">
+          <h3 style="font-family:var(--font-heading);font-weight:800;font-size:18px;line-height:1.4;letter-spacing:-0.01em;margin:0 0 8px">When Uncertainty Should Change the Plan: Adequacy Floors and Defeaters for Robotic World Models</h3>
+          <p style="font-size:14px;line-height:1.6;color:var(--color-neutral-700);margin:0">Ken Howarth</p>
+        </article>
+        <article style="padding:20px 0;border-bottom:1px solid var(--color-neutral-300)">
+          <h3 style="font-family:var(--font-heading);font-weight:800;font-size:18px;line-height:1.4;letter-spacing:-0.01em;margin:0 0 8px">Hallucination in World Models is Predictable and Preventable</h3>
+          <p style="font-size:14px;line-height:1.6;color:var(--color-neutral-700);margin:0">Nicklas Hansen, Xiaolong Wang</p>
+        </article>
+        <article style="padding:20px 0;border-bottom:1px solid var(--color-neutral-300)">
+          <h3 style="font-family:var(--font-heading);font-weight:800;font-size:18px;line-height:1.4;letter-spacing:-0.01em;margin:0 0 8px">Unified Belief-Conditioned World Modeling and Parameter Estimation for Multi-Finger Manipulation</h3>
+          <p style="font-size:14px;line-height:1.6;color:var(--color-neutral-700);margin:0">Abhinav Kumar, Soshi Iba, Rana Soltani Zarrin, Dmitry Berenson</p>
+        </article>
+        <article style="padding:20px 0;border-bottom:1px solid var(--color-neutral-300)">
+          <h3 style="font-family:var(--font-heading);font-weight:800;font-size:18px;line-height:1.4;letter-spacing:-0.01em;margin:0 0 8px">Training-Free Uncertainty Maps for Detecting Unreliable Rollouts in Driving World Models</h3>
+          <p style="font-size:14px;line-height:1.6;color:var(--color-neutral-700);margin:0">Joseph Bruno, Denis Liu, Javier Yu, Charles C Ochoa</p>
+        </article>
+        <article style="padding:20px 0;border-bottom:1px solid var(--color-neutral-300)">
+          <h3 style="font-family:var(--font-heading);font-weight:800;font-size:18px;line-height:1.4;letter-spacing:-0.01em;margin:0 0 8px">AUC-CoT: Action-Uncertainty-Conditioned Chain-of-Thought Reasoning for Vision-Language-Action Models</h3>
+          <p style="font-size:14px;line-height:1.6;color:var(--color-neutral-700);margin:0">Sehee Kweon, Wooyul Jung, Geunhee Kim, Donghwa Kang, Jiwon Mun, Ali Pesaranghader, Alexander W Olson, Frank C. Park, Byoung-Tak Zhang</p>
+        </article>
+        <article style="padding:20px 0;border-bottom:1px solid var(--color-neutral-300)">
+          <h3 style="font-family:var(--font-heading);font-weight:800;font-size:18px;line-height:1.4;letter-spacing:-0.01em;margin:0 0 8px">Latent World Models Enhance Imitation Learning with Foresight</h3>
+          <p style="font-size:14px;line-height:1.6;color:var(--color-neutral-700);margin:0">Hengkai Pan, Gaoyue Zhou, Yann LeCun, Lerrel Pinto, Deepak Pathak</p>
+        </article>
+        <article style="padding:20px 0;border-bottom:1px solid var(--color-neutral-300)">
+          <h3 style="font-family:var(--font-heading);font-weight:800;font-size:18px;line-height:1.4;letter-spacing:-0.01em;margin:0 0 8px">Test Time Augmentation and Learned Variance for Heteroscedastic Uncertainty in LiDAR Scene flow</h3>
+          <p style="font-size:14px;line-height:1.6;color:var(--color-neutral-700);margin:0">Daniel Jean-Soo Rhee, Leilani H. Gilpin</p>
+        </article>
+        <article style="padding:20px 0;border-bottom:1px solid var(--color-neutral-300)">
+          <h3 style="font-family:var(--font-heading);font-weight:800;font-size:18px;line-height:1.4;letter-spacing:-0.01em;margin:0 0 8px">Toward Uncertainty-Aware, Physics-Grounded Human World Models</h3>
+          <p style="font-size:14px;line-height:1.6;color:var(--color-neutral-700);margin:0">Yufei Zhang, Zijun Cui</p>
+        </article>
+        <article style="padding:20px 0;border-bottom:1px solid var(--color-neutral-300)">
+          <h3 style="font-family:var(--font-heading);font-weight:800;font-size:18px;line-height:1.4;letter-spacing:-0.01em;margin:0 0 8px">Noise or Ignorance? Auditing the Uncertainty Signals of Ensemble World Models against Known Noise and Error</h3>
+          <p style="font-size:14px;line-height:1.6;color:var(--color-neutral-700);margin:0">Tianlang Chen</p>
+        </article>
+        <article style="padding:20px 0;border-bottom:1px solid var(--color-neutral-300)">
+          <h3 style="font-family:var(--font-heading);font-weight:800;font-size:18px;line-height:1.4;letter-spacing:-0.01em;margin:0 0 8px">Do Household World Models Know When Their Memories Are Stale?</h3>
+          <p style="font-size:14px;line-height:1.6;color:var(--color-neutral-700);margin:0">Oliver Wang</p>
+        </article>
+        <article style="padding:20px 0;border-bottom:1px solid var(--color-neutral-300)">
+          <h3 style="font-family:var(--font-heading);font-weight:800;font-size:18px;line-height:1.4;letter-spacing:-0.01em;margin:0 0 8px">Energy-Based Policies Can Detect Their Own Failures</h3>
+          <p style="font-size:14px;line-height:1.6;color:var(--color-neutral-700);margin:0">Jalal Naghiyev, Kirill Khvastow, Alexi Gladstone, Ralf Römer, Haonan Chen, Heng Ji, Yilun Du, Angela P. Schoellig</p>
+        </article>
+        <article style="padding:20px 0;border-bottom:1px solid var(--color-neutral-300)">
+          <h3 style="font-family:var(--font-heading);font-weight:800;font-size:18px;line-height:1.4;letter-spacing:-0.01em;margin:0 0 8px">Localized Conformal Safety Monitoring with Vision-Language Models for Autonomous Driving</h3>
+          <p style="font-size:14px;line-height:1.6;color:var(--color-neutral-700);margin:0">Luís Marques, Rong Fang, Disha Kamale, Dmitry Berenson</p>
+        </article>
+        <article style="padding:20px 0;border-bottom:1px solid var(--color-neutral-300)">
+          <h3 style="font-family:var(--font-heading);font-weight:800;font-size:18px;line-height:1.4;letter-spacing:-0.01em;margin:0 0 8px">PhysiCalWorld: In-Context Physics Calibration for World Models</h3>
+          <p style="font-size:14px;line-height:1.6;color:var(--color-neutral-700);margin:0">Yunhao Luo, Wentao He, Yinpei Dai, Hyelin Nam, Hongze Fu, Joyce Chai, Nima Fazeli, Jeong Joon Park</p>
+        </article>
+        <article style="padding:20px 0;border-bottom:1px solid var(--color-neutral-300)">
+          <h3 style="font-family:var(--font-heading);font-weight:800;font-size:18px;line-height:1.4;letter-spacing:-0.01em;margin:0 0 8px">Modeling Latent Disturbances for Robust Decision-Making in World Models</h3>
+          <p style="font-size:14px;line-height:1.6;color:var(--color-neutral-700);margin:0">Junwon Seo, Andrea Bajcsy</p>
+        </article>
+        <article style="padding:20px 0;border-bottom:1px solid var(--color-neutral-300)">
+          <h3 style="font-family:var(--font-heading);font-weight:800;font-size:18px;line-height:1.4;letter-spacing:-0.01em;margin:0 0 8px">StressDream: Steering Video World Models for Robust Policy Evaluation and Improvement</h3>
+          <p style="font-size:14px;line-height:1.6;color:var(--color-neutral-700);margin:0">Junwon Seo, Sushant Veer, Ran Tian, Wenhao Ding, Apoorva Sharma, Karen Leung, Edward Schmerling, Marco Pavone, Andrea Bajcsy</p>
+        </article>
+        <article style="padding:20px 0;border-bottom:1px solid var(--color-neutral-300)">
+          <h3 style="font-family:var(--font-heading);font-weight:800;font-size:18px;line-height:1.4;letter-spacing:-0.01em;margin:0 0 8px">Articulated Object Manipulation with Uncertainty-Aware Kinematic Modeling</h3>
+          <p style="font-size:14px;line-height:1.6;color:var(--color-neutral-700);margin:0">Ruiyao Liu, Boshu Lei, Zhuoyang Pan, Kostas Daniilidis</p>
+        </article>
+        <article style="padding:20px 0;border-bottom:1px solid var(--color-neutral-300)">
+          <h3 style="font-family:var(--font-heading);font-weight:800;font-size:18px;line-height:1.4;letter-spacing:-0.01em;margin:0 0 8px">Wiggle and Go! System Identification for Zero-Shot Dynamic Rope Manipulation</h3>
+          <p style="font-size:14px;line-height:1.6;color:var(--color-neutral-700);margin:0">Arthur Jakobsson, Abhinav Mahajan, Karthik Pullalarevu, Krishna Suresh, Yunchao Yao, Yuemin Mao, Bardienus Pieter Duisterhof, Shahram Najam Syed, Jeffrey Ichnowski</p>
+        </article>
+        <article style="padding:20px 0;border-bottom:1px solid var(--color-neutral-300)">
+          <h3 style="font-family:var(--font-heading);font-weight:800;font-size:18px;line-height:1.4;letter-spacing:-0.01em;margin:0 0 8px">Beyond AND and OR: Shaping the No-Alarm Region for Failure Detection in Robotics</h3>
+          <p style="font-size:14px;line-height:1.6;color:var(--color-neutral-700);margin:0">Laura Lützow, Ahmad A. Rushdi, Mykel Kochenderfer</p>
+        </article>
+        <article style="padding:20px 0;border-bottom:1px solid var(--color-neutral-300)">
+          <h3 style="font-family:var(--font-heading);font-weight:800;font-size:18px;line-height:1.4;letter-spacing:-0.01em;margin:0 0 8px">Partially Observable Object Rearrangement via Task-Centric Active Perception</h3>
+          <p style="font-size:14px;line-height:1.6;color:var(--color-neutral-700);margin:0">Sahit Chintalapudi, Xiaoyan Wang, Aditya Agarwal, Tomás Lozano-Pérez, Leslie Pack Kaelbling</p>
+        </article>
+        <article style="padding:20px 0;border-bottom:1px solid var(--color-neutral-300)">
+          <h3 style="font-family:var(--font-heading);font-weight:800;font-size:18px;line-height:1.4;letter-spacing:-0.01em;margin:0 0 8px">Knowing Where to Look: Interactive Object Search via Spatial-Semantic Fusion</h3>
+          <p style="font-size:14px;line-height:1.6;color:var(--color-neutral-700);margin:0">Aditya Agarwal, Lucy Cai, Kelly Lu, Travis Manderson, Nicholas Roy, Tomás Lozano-Pérez, Leslie Pack Kaelbling</p>
+        </article>
+        <article style="padding:20px 0;border-bottom:1px solid var(--color-neutral-300)">
+          <h3 style="font-family:var(--font-heading);font-weight:800;font-size:18px;line-height:1.4;letter-spacing:-0.01em;margin:0 0 8px">World Models Under Asynchronous Sensor Observations</h3>
+          <p style="font-size:14px;line-height:1.6;color:var(--color-neutral-700);margin:0">Akash Anand, Abhay Anand, Yash Vishe</p>
+        </article>
+        <article style="padding:20px 0;border-bottom:1px solid var(--color-neutral-300)">
+          <h3 style="font-family:var(--font-heading);font-weight:800;font-size:18px;line-height:1.4;letter-spacing:-0.01em;margin:0 0 8px">Does Best-of-K World-Model Selection Help a Diffusion Policy Succeed?</h3>
+          <p style="font-size:14px;line-height:1.6;color:var(--color-neutral-700);margin:0">Ahmad A. Rushdi, Mykel Kochenderfer</p>
+        </article>
+        <article style="padding:20px 0;border-bottom:1px solid var(--color-neutral-300)">
+          <h3 style="font-family:var(--font-heading);font-weight:800;font-size:18px;line-height:1.4;letter-spacing:-0.01em;margin:0 0 8px">MBCE: TD-Guided Action Editing for Offline Model-Based RL</h3>
+          <p style="font-size:14px;line-height:1.6;color:var(--color-neutral-700);margin:0">Jisang Ahn</p>
+        </article>
+        <article style="padding:20px 0;border-bottom:1px solid var(--color-neutral-300)">
+          <h3 style="font-family:var(--font-heading);font-weight:800;font-size:18px;line-height:1.4;letter-spacing:-0.01em;margin:0 0 8px">Reads Right, Judges Wrong: Near-Miss Failures and the Limits of Uncertainty Recovery in VLM Success Detectors</h3>
+          <p style="font-size:14px;line-height:1.6;color:var(--color-neutral-700);margin:0">Hamza Naeem</p>
+        </article>
+        <article style="padding:20px 0;border-bottom:1px solid var(--color-neutral-300)">
+          <h3 style="font-family:var(--font-heading);font-weight:800;font-size:18px;line-height:1.4;letter-spacing:-0.01em;margin:0 0 8px">Knowing When Not to Answer: Measurability Gates Forecasts, Not Decisions</h3>
+          <p style="font-size:14px;line-height:1.6;color:var(--color-neutral-700);margin:0">Brownstafford Abraham</p>
+        </article>
+        <article style="padding:20px 0;border-bottom:1px solid var(--color-neutral-300)">
+          <h3 style="font-family:var(--font-heading);font-weight:800;font-size:18px;line-height:1.4;letter-spacing:-0.01em;margin:0 0 8px">FOCUS: Flow-Matching with Offline Critical-Interaction Update Supervision for Robot World Models</h3>
+          <p style="font-size:14px;line-height:1.6;color:var(--color-neutral-700);margin:0">Weiyi Hong, Chenjun Bai</p>
+        </article>
+        <article style="padding:20px 0;border-bottom:1px solid var(--color-neutral-300)">
+          <h3 style="font-family:var(--font-heading);font-weight:800;font-size:18px;line-height:1.4;letter-spacing:-0.01em;margin:0 0 8px">JACK: Joint Axis Correction from Kinesthetic Feedback</h3>
+          <p style="font-size:14px;line-height:1.6;color:var(--color-neutral-700);margin:0">Arthur Jakobsson, Eugene Lee, Bardienus Pieter Duisterhof, Huang Huang, Jeff Tan, Romina Mir, Jean Oh, Jeffrey Ichnowski</p>
+        </article>
+      </div>
     </div>
   </section>
 
@@ -292,14 +450,13 @@ class Component extends DCLogic {
         person("Chenhao Li", "ETH Zurich and Google DeepMind", "chenhao.png"),
       ].map((s, i) => ({ ...s, n: String(i + 1).padStart(2, "0") })),
       schedule: [
-        { time: "9:00 – 9:10", event: "Opening remarks" },
-        { time: "9:10 – 10:10", event: "Invited talks 1 & 2" },
-        { time: "10:10 – 10:30", event: "Coffee break" },
-        { time: "10:30 – 11:30", event: "Invited talks 3 & 4" },
-        { time: "11:30 – 12:30", event: "Poster session" },
-        { time: "12:30 – 13:30", event: "Lunch" },
-        { time: "13:30 – 14:30", event: "Roundtable discussion" },
-        { time: "14:30 – 15:00", event: "Closing remarks" },
+        { time: "2:00 – 2:15 PM", event: "Introduction" },
+        { time: "2:15 – 3:00 PM", event: "Invited talk 1" },
+        { time: "3:00 – 3:45 PM", event: "Invited talk 2" },
+        { time: "3:45 – 4:30 PM", event: "Invited talk 3" },
+        { time: "4:30 – 5:15 PM", event: "Invited talk 4" },
+        { time: "5:15 – 5:30 PM", event: "Closing remarks" },
+        { time: "5:30 – 6:00 PM", event: "Poster session" },
       ],
       organizers: [
         person("Rachel Ma", "Massachusetts Institute of Technology", "rachel.jpeg"),
